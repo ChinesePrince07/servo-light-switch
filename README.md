@@ -71,9 +71,3 @@ If someone toggles the switch manually, HomeKit's state drifts. The next voice c
 
 If WiFi is down for 60 seconds, the board reboots itself. This dodges the "stuck unavailable" state that Home app sometimes gets into after a network hiccup.
 
-## Troubleshooting
-
-- **"Unavailable" in Home app:** probably weak signal. Check `RSSI` in Serial when it reconnects. Below -75 is rough; -85 is broken. Get an external antenna — it's a huge upgrade.
-- **WiFi just won't connect:** confirm it's 2.4 GHz. The C3 cannot see 5 GHz.
-- **Board resets when the servo moves:** the servo is stalling and browning out the regulator. Reduce the press angle.
-- **Works perfectly on a hotspot, flaky everywhere else:** your network has client isolation (common on dorm/guest WiFi). A $25 travel router fixes it and is worth the trouble.
