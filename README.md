@@ -6,6 +6,10 @@ A XIAO ESP32C3 advertises itself on WiFi as an Apple HomeKit light. Siri sends t
 
 > "Hey Siri, turn on the light."
 
+https://github.com/user-attachments/assets/30583818-0d01-4782-8400-2a43bfde717b
+
+
+
 ## Hardware
 
 - XIAO ESP32C3 (with an external IPEX 2.4 GHz antenna — the onboard one is optimistic)
