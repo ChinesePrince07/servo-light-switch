@@ -24,18 +24,26 @@ static void pressButton() {
 
 struct DormLight : Service::LightBulb {
   SpanCharacteristic *power;
+  unsigned long resetAt = 0;
 
   DormLight() : Service::LightBulb() {
     power = new Characteristic::On(false);
   }
 
   boolean update() override {
-    if (power->getNewVal<bool>() != power->getVal<bool>()) {
-      Serial.printf("homekit: state change %d -> %d\n",
-                    power->getVal<bool>(), power->getNewVal<bool>());
+    if (power->getNewVal<bool>()) {
+      Serial.println("homekit: turn-on requested, pressing button");
       pressButton();
+      resetAt = millis() + 300;
     }
     return true;
+  }
+
+  void loop() override {
+    if (resetAt != 0 && millis() > resetAt) {
+      power->setVal(false);
+      resetAt = 0;
+    }
   }
 };
 

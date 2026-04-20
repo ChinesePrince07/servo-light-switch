@@ -63,9 +63,9 @@ If the servo misses the button, bump the press angle up. If it slams and buzzes,
 
 ## How it behaves
 
-The switch is a single toggle button — one press flips the light, no matter which way. The code mirrors whatever on/off state HomeKit thinks the light is in and fires a press on every on↔off flip.
+The switch is a single toggle button with no electrical on/off state, so the code treats it as a momentary button in HomeKit. Every "Hey Siri, turn on the light" triggers one servo press and then silently resets the HomeKit state to OFF after 300ms. Result: "turn on" always presses the button, every time, no matter what the light is actually doing.
 
-If someone toggles the switch manually, HomeKit's state drifts. The next voice command in the "wrong" direction does nothing; the one after it resyncs. Mildly annoying, easy to work around.
+"Turn off" is a no-op — HomeKit thinks the light is already off, so Siri won't send the command. Just say "turn on" (or "toggle the light") whenever you want to flip it.
 
 ## WiFi watchdog
 
