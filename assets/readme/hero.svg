@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+  <title id="title">Servo Light Switch</title>
+  <desc id="desc">A HomeKit command travels through an ESP32S3 and servo to press the top or bottom of a physical rocker switch.</desc>
+  <rect width="1200" height="390" rx="24" fill="#F3EFE6"/>
+  <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" fill="#17212B">
+    <text x="56" y="66" font-size="18" font-weight="700" letter-spacing="3">HOMEKIT / ESP32S3 / MG90S</text>
+    <text x="54" y="145" font-size="62" font-weight="800">Servo Light</text>
+    <text x="54" y="210" font-size="62" font-weight="800">Switch</text>
+    <text x="56" y="266" font-size="23">A robot finger for the rocker</text>
+    <g transform="translate(56 305)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+      <rect width="124" height="42" rx="21" fill="#1967D2"/>
+      <text x="62" y="28" text-anchor="middle" font-size="17" font-weight="700" fill="#FFFFFF">SIRI</text>
+      <path d="M136 21 H205" stroke="#17212B" stroke-width="3"/>
+      <path d="M196 12 L207 21 L196 30" fill="none" stroke="#17212B" stroke-width="3"/>
+      <text x="224" y="28" font-size="17" font-weight="700">PRESS, DON'T REWIRE</text>
+    </g>
+  </g>
+  <g transform="translate(760 45)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <rect x="0" y="0" width="360" height="300" rx="18" fill="#FFFFFF" stroke="#17212B" stroke-width="4"/>
+    <rect x="111" y="42" width="138" height="216" rx="12" fill="#E7E2D7" stroke="#17212B" stroke-width="4"/>
+    <path d="M122 150 L238 150 L220 72 L140 72 Z" fill="#FFFFFF" stroke="#17212B" stroke-width="3"/>
+    <path d="M122 150 L238 150 L220 228 L140 228 Z" fill="#D9D2C4" stroke="#17212B" stroke-width="3"/>
+    <circle cx="52" cy="150" r="30" fill="#E7A928" stroke="#17212B" stroke-width="4"/>
+    <path d="M75 136 L145 104" stroke="#17212B" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="52" cy="150" r="7" fill="#17212B"/>
+    <path d="M284 94 H326 M316 84 L327 94 L316 104" fill="none" stroke="#1967D2" stroke-width="4"/>
+    <path d="M284 206 H326 M316 196 L327 206 L316 216" fill="none" stroke="#E7A928" stroke-width="4"/>
+    <text x="284" y="79" font-size="17" font-weight="800" fill="#1967D2">ON</text>
+    <text x="284" y="191" font-size="17" font-weight="800" fill="#9A6500">OFF</text>
+    <text x="180" y="286" text-anchor="middle" font-size="16" font-weight="700">UP / REST / DOWN</text>
+  </g>
+</svg>
